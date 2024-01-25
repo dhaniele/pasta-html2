@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+</head>
+<body>
+<h1>O que é CSS?</h1>
+<p>CSS é a sigla de Cascading Style Sheets (Folhas de Estilo em Cascata).</p>
+<p>O que for aprendido nas aulas de CSS será aplicado nas páginas criadas nas aulas de Html.</p>
+
+<h1>Estilo Inline</h1>
+<p>O estilo Inline permite aplicar estilos locais, ou seja, configurar cada tag individualmente. Serve para modificações pontuais. Insira dentro da tag específica <strong>style=""</strong>. O estilo inline se sobrepõe aos demais.</p>
+
+<h1>Estilo interno</h1>
+<p>A aplicação do estilo é feita no próprio Html, porém no &#60 head>&#60 /head>, logo abaixo de &#60 title>&#60 /title>. Insira a tag &#60 style>&#60 /style> e dentro dela mencione as tags que receberão os estilos. O estilo interno se sobrepõe ao estilo externo.</p>
+
+<h1>Estilo Externo</h1>
+<p>Nele a aplicação dos estilos está em outro arquivo de código, que será <strong>.css</strong>. 
+
+<h2>Configurando o Html para receber o CSS</h2>
+<p>No &#60 head>&#60 /head> do html, logo abaixo de &#60 title>&#60 /title> insira o link:css que aparecerá da seguinte forma, depois que for selecionado: <strong> &#60 link rel="stylesheet" href=" style.css" ></strong>. Isso informa que o arquivo .index irá usar o arquivo .css e deve ser feito em todas as paginas do código que receberão os estilos.</p>
+
+<h2>Trabalhando no arquivo .css</h2>
+<h3>Charset</h3>
+<p>A regra <strong>@charset "UTF-8";</strong> é utilizada para compatibilidade com caracteres acentuados. Deve ser inserida no inicio do arquivo .css. Não é obrigatória.</p>
+
+<h3>Aplicando os Estilos</h3>
+<p>no arquivo .css mencione qual tag receberá os estilos e, a partir daí, faça as alterações.</p>
+
+<h1>Cores</h1>
+<p>Representadas por nomes, códigos hexadecimais, código rgb ou hsl (matiz, saturação e luminosidade)</p>
+
+<h2>Ferramentas para paleta de cores</h2>
+<p>Site  <a href="https://color.adobe.com/pt/create/color-wheel">Adobe color </a> </p>
+<p>Site  <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Paletton</a></p>
+<p>Site <a href="https://coolors.co/">Coolors</a></p>
+<p>Extensão ColorZilla do <a href="https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-br">Chrome Web Store</a> para capturar cores</p>
+<h2>Tags de cores</h2>
+<ul>
+    <li>style="background-color:#;" para a cor de fundo da tag desejada</li>
+    <li>color:#; para a cor da letra</li>
+    <li>background-image: linear-gradiente; para fundo com degradê</li>
+    <li>/*coloque aqui o comentário/*</li>
+</ul>
+
+<h2>Configurações globais</h2>
+<p>*{<br>font-family: Arial, Helvetica, sans-serif;<br>height :100% <br>}</p>
+
+<h2>Outras configurações</h2>
+<p>p{<br>text-align: justify; (para texto justificado no parágrafo) <br>}</p>
+
+
+
+
+
+
+    <!---->
+    <a href="index.html" rel=""prev>Página 01</a> <a href="pag002.html" rel="prev">Página 02</a>
+</body>
+</html>

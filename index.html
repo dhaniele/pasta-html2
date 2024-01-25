@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icone-hello.ico" type="image/x-icon">
+    <title>Página Html: Primeiros Passos</title>
+</head>
+<body>
+    <h1>Página Html: Primeiros Passos!</h1>
+    <h2>Aprendendo as primeiras tags</h2>
+<p>Na tag < title > < /title >, o texto acrescentado aparece na guia da internet.</p>
+<p>Para o título aparecer no corpo do site deve-se usar a tag < h1 > < /h1></p>
+<p>A tag < hr> acresenta uma linha horizontal.</p>
+<p>A tag < br > quebra a linha em um lugar específico. Ex.:</p>
+<p>SEM A TAG: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi adipisci, exercitationem eos tenetur, reiciendis explicabo asperiores atque facilis ab eaque natus iure doloremque saepe fugiat nisi, porro voluptates illum id.</p>
+<p>COM A TAG: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi adipisci, exercitationem eos tenetur, reiciendis < br ><br> explicabo asperiores atque facilis ab eaque natus iure doloremque saepe fugiat nisi, porro voluptates illum id.</p>
+<p>Acrecentar a tag < !---- > adiciona comentários, que não aparecerão na página da internet.<!-- Este é um exemplo de comentário-->< !--Este é um exemplo de comentário-- ></p>
+    <h2>Adicionando emojis</h2>
+<p>Site https://emojipedia.org , uma biblioteca de emojis. Para adicionar, copiar o código "CODEPOINTS"do emoji e colar logo após os caracteres "&#x". Estes caracteres informam que o valor é hexadecimal.<br>Copiar  e colar a imagem nem sempre funciona em todos os navegadores</p>
+<p>Exemplo de CODEPOINTS:</p>
+<p>&#x 1F596;&#x1F596; Obs.: tudo junto, sem espaço</p>
+    <h2>Usando imagens no site</h2>
+<p>Ao pesquisar uma imagem no google, clicar em "Ferramentas" do buscador e escolher uma opção:</p>
+ <p>Marcadas para reutilização com modificação: Permite a utilização da imagem, modificação e comercialização <br>Marcadas para reutilização: Permite utilização e comercialização. Não é pemitido realizar modificações<br>Marcadas para reutilização não comercial com modificação: Permite utilização e modificação. Não permitidas para uso comercial<br>Marcadas para reutilização não comercial: Permitida a utilização. Não são permitidos modificação e uso comercial</p>
+    <h3>Sites para buscar imagens</h3>
+<p>Unsplash https://unsplash.com/pt-br<br>Pexels https://www.pexels.com/pt-br/</p>
+    <h3>Formatos de Imagem</h3>
+<p>JPEG: melhor formato de compactação <br>PNG: permite transparência<br>GIF: permite animação</p>
+<p>1500 de largura é o tamanho máximo de imagem para site. Geralmente é usado entre 600 e 650</p>
+<p>GIMP Programa de manipulação de imagem gratuito: Redimensionado imagens</p>
+    <h3>Adicionando imagens</h3>
+<p>Usar < img src="" alt="" > Com o cursor dentro das aspas de "src" pressionar CTRL+ESPAÇO, aparecerá a lista de imagens que estão dentro da pasta de trabalho html. <br>alt="" é o texto alternativo, uma explicação da imagem que está sendo utilizada.
+<p>Exemplo: < img src="imagens/paisagem-650.jpeg" alt="paisagem com árvore em primeiro plano, um lago e uma montanha ao fundo"></p>
+<img src="imagens/paisagem-650.jpeg" alt="paisagem com árvore em primeiro plano, um lago e uma montanha ao fundo">
+<p>imagens externas: copiar e colar o link de uma imagem da internet</p>
+<p>Exemplo:< img src="https://i0.wp.com/emotioncard.com.br/wp-content/uploads/2016/03/10-nat1.jpg?w=800&ssl=1" alt="paisagem pequena cachoeira"></p>
+<img src="https://i0.wp.com/emotioncard.com.br/wp-content/uploads/2016/03/10-nat1.jpg?w=800&ssl=1" alt="paisagem pequena cachoeira">
+    <h2>Favicon</h2>
+<p>Biblioteca de ícones</p>
+<p>ICON ARCHIVE: https://www.iconarchive.com/<br>FAVICON.CC: https://www.favicon.cc/ <br>FAVICON.IO: https://favicon.io/#google_vignette , transforma outros arquivos em ícone<br>Ao baixar, usar a extensão "ico" </p>
+<p>Adicionar na head (pode ser acima do < title > < / title >): link:favicon <br>aparecerá: < link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></p>
+<p>Com o cursor entre as aspas do href pressionar CTRL+ESPAÇO e escolher o aquivo de ícone</p>
+    <h2>Obsolets Tags</h2>
+<p>W3C https://www.w3.org/TR/2010/WD-html5-20100304/obsolete.html mostra tags que não são mais utilizadas em HTML5</p>
+<p>HTML5  Foca no significado, não na forma!!!!!</p>
+<h2>Negrito e Itálico</h2>
+<p>Utiliza-se a tag < strong >< /strong> para destacar um texto em negrito. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Sequi et aut exercitationem</strong> corrupti inventore saepe. Expedita laboriosam ducimus itaque, ut blanditiis inventore? Consectetur exercitationem culpa possimus quisquam totam. Sed, cumque? <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam itaque dolores quod, laboriosam fugiat <strong>optio blanditiis nostrum</strong> ? Dolores, mollitia ea labore placeat porro ducimus iusto, incidunt tenetur excepturi, qui numquam.</p> 
+<p>Utiliza-se a tag < em > < /em> para dar <em>ênfase em itálico</em></p>
+<p>DICA: para configurar a transferência de carcteres para dentro de uma tag de forma automática faça o seguinte:</p>
+<p>Selecione o trecho, aperte CTRL+SHIFT+P. Na janela que abrirá em seguida selecione a opção: <strong>"Emmet: Wrap whith Abbreviation"</strong> ou digite "abb" para encontrar essa opção. Para envelopar o trecho desejado de forma rápida selecione os caracteres, use CTRL+SHIFT+P, em seguida, digite a tag de interesse e dê ENTER.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi minus maxime temporibus recusandae ducimus adipisci veritatis perspiciatis aliquid? Quo, quos! Voluptatum saepe porro ab laboriosam perspiciatis doloremque fugiat quibusdam fuga?</p>
+</body>
+</html>

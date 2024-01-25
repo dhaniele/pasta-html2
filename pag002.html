@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Html e CSS</title>    
+</head>
+<body>
+     <h3>Links internos</h3>
+    <p>Para inserir um link interno tenha os arquivos html na mesma pasta. Uliliza-se a tag <br><strong>< a href="</strong>arquivo da página*<strong>" rel="next"></strong> texto clicável*<strong>< /a></strong> para a próxima página ou <br><strong>< a href="</strong>arquivo da página*<strong>" rel="prev"></strong> texto clicável*<strong> < /a></strong> para a página anterior</p>Caso a página para a qual deseja voltar esteja em outra pasta insira "../" antes do nome do arquivo. Exemplo: < a href="../index. html"> texto clicável* < /a>.<p>
+
+    <h3>Links para download</h3>
+
+    <h4>Download de PDF</h4>
+       Insira em href="" o local do arquivo que deseja disponibilizar para download.
+        <p>< a href="arquivos-pdf/primeiros-passos-musica-classica.pdf">Arquivo png< /a></p>
+       <p>Adicione os parâmetros download="" e type="". Exemplo; <br>< a href="arquivos-pdf/primeiros-passos-musica-classica.pdf" download="arquivos-pdf/primeiros-passos-musica-classica.pdf" type="application/pdf">Arquivo png< /a></p>
+
+    <ul>
+        <li><a href="arquivos-pdf/primeiros-passos-musica-classica.pdf" download="arquivos-pdf/primeiros-passos-musica-classica.pdf" type="application/pdf">Arquivo PDF</a></li>
+        <li><a href="imagens/paisagem-650.jpeg">Arquivo jpeg</a></li>
+    </ul>
+        <p>Site que contém a lista de Media Types: https://www.iana.org/assignments/media-types/media-types.xhtml</p>
+
+    <h2>Imagens Dinâmicas</h2>
+    <p>Tamanhos diferentes de imagens para serem usadas de acordo com o tamanho da tela: 300x300 para celular, 700x700 para tablet e 1000x1000 para Pc, como exemplo</p>
+    <p>A tag < picture>< /picture> permite o uso de diferentes sources. Recomenda-se iniciar inserindo a imagem de maior tamanho e incluir as demais em ordem decrescente, logo acima da anterior.</p>
+    <p>Dentro de < picture>< /picture> adicione a tag < img src="arquivo da imagem*" alt="descrição da imagem">. Logo acima desta tag adicione a tag source:media</p>
+    <p>Modifique source media="(<strong>min</strong>-width: )" para <strong>max</strong>. Adicione em max-width: o tamanho da imagem a ser carregada, somando 50px. Exemplo: < source media="(min-width:1050px).</p>
+    <p>O navegador irá carregar por padrão a imagem maior. Caso a tela tenha o tamanho menor que o estabelecido em max-widht, será carregada a imagem seguinte. Em srcset="" adicione o arquivo desta imagem. Logo em seguida adicione no parâmetro type="" o media type correspondente ao arquivo.</p>
+    <p>Para inserir mais tamanhos repita o processo, adicionando source logo acima.</p>
+    <p>< picture> <br>
+        < source media="(min-width: )" srcset="" type="image/"> <br>
+        < source media="(min-width: )" srcset="" type="image/"> <br>
+        < img src="" alt=""> <br>
+    < /picture></p>
+
+    <h2>Áudio</h2>
+         <p>Utilize a tag < audio>< /audio> <br><strong>< audio src="</strong>audios/drive-breakbeat-173062.mp3<strong>
+             " controls>< /audio></strong></p>
+         <audio src="audios/drive-breakbeat-173062.mp3" controls></audio>
+
+         <h3>Múltiplos formatos de áudio</h3>
+         <p>Para ter maior compatibilidade com os navegadores utiliza-se vários formatos de Áudio: MP3, OGG e WAV. Adicione os diferentes arquivos da seguinte forma:</p>
+         <p>
+             < audio> <br>
+                < source src="audio.mp3" type="audio/mpeg"> <br>
+                < source src="audio.ogg" type="audio/ogg"> <br>
+                < source src="audio.wav" type="audio/wav">  São muitos pesados, recomenda-se não usar.<br>
+                     < /audio>
+         </p>
+
+         <p>Outro parâmetro: preload="metadata", carrega as informações do arquivo de áudio.</p>
+
+     <h2>Vídeos</h2>
+     <p>Handbrake: Ferramenta gratuita para converter os vídeos.<!--Não funcionou no meu computador. Pediu para instalar net.6 e eu não conclui o processo-->
+     </p>
+     <p>Formatos de vídeo: MP4 e MP4V, WEBM E OGG (até 1080p)</p>
+     <p>utiliza-se a tag < video src="videos/video-html.mp4" width="600" controls poster="imagens/paisagem-650.jpeg">< /video></p>
+
+    <video src="videos/video-html.mp4" width="560" controls poster="imagens/paisagem-650.jpeg"></video>
+
+     <p>width  é a largura do vídeo; não influencia no tamanho do arquivo. <br> Conntrols exibe os controles para tocar o vídeo</p>
+     <p>Para incluir vários formatos de vídeo utliliza-se os source:src.</p>
+     <p>O parâmetro poster="" permite adicionar um arquivo de imagem para ser a capa do seu vídeo.</p>
+     <p>Adicione um parágrafo com uma mensagem, logo após os sources. Ele aparecerá caso os nenhum dos arquivos seja compatível com o navegador.</p>
+
+     <h3>Inserir vídeos do Youtube</h3>
+     <p>Com o vídeo desejado já aberto no youtube, clique em COMPARTILHAR, depois em INCORPORAR e em seguida em  COPIAR. Após, é só COLAR no editor de código.</p>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/4hac-N0cNHc?si=_X8UwCQKKWdONz8b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <a href="index.html" rel=""prev>Página 01</a>
+
+        <a href="pag003.html" rel=""next>Página 03</a>
+</body>
+</html>
